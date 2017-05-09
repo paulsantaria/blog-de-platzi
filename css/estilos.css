@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #203844,#244253,#1F4F6B);
+  padding: 0 12px;
+}
+.header-derecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  font-weight: bold;
+}
+nav {
+  height: inherit;
+  padding: 0 15px;
+}
+.header-derecha nav ul {
+  display: flex;
+  height: inherit;
+  margin: 0;
+}
+.header-derecha nav li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: inherit;
+}
+.header-derecha nav a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  transition: .1s;
+}
+.header-derecha nav li:after {
+  content: "|";
+  color: white;
+}
+.header-derecha nav li:last-child:after {
+  display: none;
+}
+.header-derecha nav a:hover{
+  box-shadow: inset 0 5px 0 red;
+}
+.logo {
+  width: 82px;
+  height: 26px;
+}
+.circulo {
+  width: 35px;
+  height: 35px;
+}
+.boton {
+  background: #7FC719;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+  transition: .5s;
+}
+.boton:active {
+  transform: scale(.8);
+}
+.circulo {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.header-derecha .circulo {
+  margin-left: 10px;
+}
+.contenedor{
+  width: 1000px;
+  margin: auto;
+
+}
+.carreras {
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto;
+}
+.carreras ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.carreras li {
+  list-style: none;
+  padding: 0 10px;
+}
+.carreras a {
+  text-decoration: none;
+  color: grey;
+}
+.portada {
+  background-image: url(../imagenes/chancho.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding: 20px;
+}
+
+.portada-elements {
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.derecha {
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  height: 250px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.izquierda {
+  color: white;
+  height: 150px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h6 {
+  margin: 0;
+  color: grey;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.logo-der {
+  width: 60px;
+  height: 60px;
+}
+
+
+.izquierda a {
+  text-decoration: none;
+  color: blue;
+  padding: 0 10px;
+}
+.izquierda h1 {
+  font-size: 30px;
+
+  font-weight: bold;
+}
+.boton-azul {
+  background: #0791E6;
+  border-radius: 5px;
+  color: white !important;
+  padding: 5px 10px 5px 10px;
+}
+.thumb {
+  width: 25px;
+  height: 25px;
+}
+.posts {
+  display: flex;
+  padding: 15px;
+}
+.like {
+  border: 1px solid lightgrey;
+  border-radius: 12px;
+  height: 60px;
+  width: 45px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.like p {
+  margin: 0;
+}
+.texto span {
+  margin-left: 10px;
+}
+.texto h3 {
+  margin-top: 0;
+}
+.subtitulo {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.subtitulo a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px !important;
+}
+.subtitulo .a {
+  margin-left: 0;
+}
+.posts:hover {
+  box-shadow: inset 1px 1px 0 red;
+  border-radius: 10px;
+}
+.paginador {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 15px;
+
+}
+.paginador ul {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.paginador li {
+  list-style: none;
+  display: flex;
+  vertical-align: middle;
+
+}
+.paginador a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.last:after {
+  content: "|";
+  padding: 0 5px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pie {
+  background: #1C3643;
+}
+.resumen {
+  width: 213px;
+  color: white;
+  font-size: 15px;
+  margin-right: 50px;
+  border-right: 2px solid white;
+  padding-right: 50px;
+}
+.enlaces {
+  width: 213px;
+}
+.enlaces li{
+  list-style: none;
+  margin-top: 8px;
+}
+.enlaces a {
+  color: white;
+  font-weight: bold;
+}
+.redes li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.redes a {
+  color: white;
+  font-weight: bold;
+
+}
